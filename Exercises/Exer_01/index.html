@@ -5,20 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exercise_1</title>
+
   <style>
   body {
   background-image:url("/Exercises/Exer_01/img/dark.jpg");
+  
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size:100%100%;
   }
   button {
   height :50px;
+  width: 15vh;
   padding: 10px 20px;
-  background-color:lightgray;
+  background-color:#2FAD20;
   border-style:solid;
   border-radius: 80px;
   cursor: pointer;
+  }
+  
+  h2{
+    background-color: #DE3535;
+    width:25vh;
+    height :35px;
+    color :#FFFFFF;
+    letter-spacing:5px;
+    padding: 15px 30px;
+    
     
   }
  </style>
@@ -37,6 +50,18 @@
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
 <p id="demo"></p>
+<br>
+
+<div class="h2">
+  <h2>Today is Special For you!</h2>
+</div>
+
+<button onclick="document.getElementById('myImage').src='/Exercises/Exer_01/img/bir.gif'">Click me 1st</button>
+
+<img id="myImage" src="/Exercises/Exer_01/img/hi.gif" style="width:300px" height="350">
+
+<button onclick="document.getElementById('myImage').src='/Exercises/Exer_01/img/happy-birthday.gif'">Click Me 2nd</button>
+
 
  
 </body>
