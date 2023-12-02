@@ -1,37 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercies</title>
+  <script src="/Shakyakithmini.github.io/Exercies/Exercies_02/js/script.js"></script>
   <style>
-  body {
-  background-image:linear-gradient(#35A1DD, #E8F2F8);
-  background-attachment:fixed;
-  background-size:100%100%;
+body {
+  background-image:linear-gradient(#604596,#FAFAFA,#E33AA8);
+      background-attachment:fixed;
+      background-size:100%100%;
+      padding: 30px;
+      margin:15px 25px 15px 25px;
+
+    }
+    * {
+          box-sizing: border-box;
+        }
+        
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .divright1 {
+    border: 6px outset #FFFFFF;
+    background-color: #AA1485  ;
+    text-align: center;
+    box-shadow: #000000 20px 15px 10px 0px;
   }
-  button {
-  height :30px;
-  width: 5vh;
-  color :#000000
-  padding: 10px 20px;
-  background-color:#F8FFF7;
-  border-style:solid;
+  .divright2 {
+    border: 8px outset #FFFFFF;
+    background-color: #946CCD ;
+    box-shadow: #000000 20px 15px 10px 0px;
+    text-align: center;
     
   }
- </style>
+  
+    
+  </style>
+  <script>
+    
+function getAnswer() {
+
+      var answer = "Statements are used in JavaScript to control its program flow. ";
+
+      // Display the answer on the page
+      document.getElementById("answer").innerHTML = answer;
+    }
+    function demo1() {
+      let x = 5;
+      let y = 6;
+      let z = x + y;
+      document.getElementById("demo1").innerHTML =
+        "The value of z is: " + z;
+    }
+    function demo2() {
+      let x = 10;
+      let y = 6;
+      let z = x - y;
+      document.getElementById("demo2").innerHTML =
+        "The value of z is: " + z;
+    }
+    function demo3() {
+      let x = 10;
+      let y = 5;
+      let z = x * y;
+      document.getElementById("demo3").innerHTML =
+        "The value of z is: " + z;
+    }
+    function demo4() {
+      let x = 100;
+      let y = 5;
+      let z = x / y;
+      document.getElementById("demo4").innerHTML =
+        "The value of z is: " + z;
+    }
+
+
+  </script>
+  
+</head>
+
+
 <body>
-<center>
-<h2>Let's Start JavaScript Operators?</h2>
-
-<h1 id="demo"> Do you like it?</h1>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>YES</button>
   
-  
+    <div class="divright1">
+    <h1>What is JavaScript Statement?</h1>
 
+<h3>Click the button to get the answer:</h3>
+  <button style="width: 100px;height: 30px;border-radius: 10px; border-color: pink;background-color: lightpink;"
+  button onclick="getAnswer()">Get Answer</button>
+  <p id="answer"></p>
+
+
+    <br>
+    
+    </div> <br><br><br><br><br><br>
+  
+  <div class="divright2">
+  <h1 style="font-size: 60px; font-family: 'times new roman';">JavaScript Variables <br>
+  <h1>Addition</h1>
+
+  <p>x, y, and z are variables.</p>
+  x = 5;<br>
+  num y = 6;<br>
+  num z = x + y;<br>
+  <p id="demo1"></p>
+<button style="width: 100px;height: 30px;border-radius: 10px; border-color: purple;background-color: lightgray;"
+  button type="button" onclick="demo1()">SUM</button>
+
+  <br>
+  
+  <h1>Substarction</h1>
+
+  <p>x, y, and z are variables.</p>
+  num x = 10;<br>
+  num y = 6;<br>
+  num z = x - y;<br>
+  <p id="demo2"></p>
+  <button style="width: 100px;height: 30px;border-radius: 10px; border-color: purple;background-color: lightgray; color: black"
+
+  button type="button" onclick="demo2()">Sub</button>
+
+  <br>
+  <h1>Multiplication</h1>
+
+  <p>x, y, and z are variables.</p>
+  num x = 10;<br>
+  num y = 5;<br>
+  num z = x * y;<br>
+  <p id="demo3"></p>
+  <button style="width: 100px;height: 30px;border-radius: 10px; border-color: purple;background-color: lightgray;"
+
+  button type="button" onclick="demo3()">Multiplication</button>
+  <br>
+  
+  <h1>Division</h1>
+  <p>x, y, and z are variables.</p>
+  num x = 100;<br>
+  num y = 5;<br>
+  num z = x / y;<br>
+  <p id="demo4"></p>
+  <button style="width: 100px;height: 30px;border-radius: 10px; border-color: purple;background-color: lightgray;"
+
+  button type="button" onclick="demo4()">Division</button>
+  </div>
+
+  </div>
 </body>
-
 </html>
